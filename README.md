@@ -1,0 +1,2 @@
+# Minipedia
+A mini Wikipedia
