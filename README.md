@@ -1,2 +1,2 @@
 # Minipedia
-A mini Wikipedia
+A mini Wikipedia with loads of information
