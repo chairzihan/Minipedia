@@ -1,15 +1,15 @@
 @keyframes backgroundPattern {
-    0% {background-image: url(images/backgroundPattern_01.png)}
-    10% {background-image: url(images/backgroundPattern_02.png)}
-    20% {background-image: url(images/backgroundPattern_03.png)}
-    30% {background-image: url(images/backgroundPattern_04.png)}
-    40% {background-image: url(images/backgroundPattern_05.png)}
-    50% {background-image: url(images/backgroundPattern_06.png)}
-    60% {background-image: url(images/backgroundPattern_07.png)}
-    70% {background-image: url(images/backgroundPattern_08.png)}
-    80% {background-image: url(images/backgroundPattern_09.png)}
-    90% {background-image: url(images/backgroundPattern_10.png)}
-    100% {background-image: url(images/backgroundPattern_01.png)}
+    0% {background-image: url(matt-images/backgroundPattern_01.png)}
+    10% {background-image: url(matt-images/backgroundPattern_02.png)}
+    20% {background-image: url(matt-images/backgroundPattern_03.png)}
+    30% {background-image: url(matt-images/backgroundPattern_04.png)}
+    40% {background-image: url(matt-images/backgroundPattern_05.png)}
+    50% {background-image: url(matt-images/backgroundPattern_06.png)}
+    60% {background-image: url(matt-images/backgroundPattern_07.png)}
+    70% {background-image: url(matt-images/backgroundPattern_08.png)}
+    80% {background-image: url(matt-images/backgroundPattern_09.png)}
+    90% {background-image: url(matt-images/backgroundPattern_10.png)}
+    100% {background-image: url(matt-images/backgroundPattern_01.png)}
 }
 body {
     background-color: rgb(150, 167, 172);
