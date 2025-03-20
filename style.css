@@ -17,13 +17,14 @@ body {
     animation-duration: 0.45s;
     animation-iteration-count: infinite;
     background-blend-mode: soft-light;
-	background-attachment: fixed;
+    background-attachment: fixed;
+    margin:0px;
 }
 .marginedStuff {
     margin: auto 20vw;
     padding:2vw;
     background-color: rgb(104, 123, 129);
-    opacity: 0.9;
+    opacity: 0.95;
 }
 .leftSide {
     position:fixed;
@@ -67,15 +68,28 @@ img {
 .imgContainer {
     float: right;
     position: relative;
-	right:0px;
+    right:0px;
     margin-left:10px;
 }
 .imgSubtitle {
     float:right;
     position: absolute;
     padding: 3px;
-    font-size:15px;
+    font-size:12px;
     border: 2px double black;
-    bottom:-30px;
+    bottom: -9px;
     background-color:rgb(167, 185, 201);
+    right: -5px;
+}
+a:link {
+    color:rgb(96, 183, 255)
+}
+a:hover{
+    color:rgb(190, 226, 255)
+}
+a:visited{
+    color:rgb(47, 67, 83)
+}
+a:active{
+    color:rgb(136, 166, 190)
 }
