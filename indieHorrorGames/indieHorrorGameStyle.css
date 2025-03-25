@@ -1,0 +1,169 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h4 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+#secondaryNav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    padding: 10px;
+}
+
+
+#navbar a:hover {
+    background-color: #555;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#secondaryNav a {
+    background-color: #656565;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; 
+    width: 100%;   
+    text-align: center;
+    border-radius: 10px;
+}
+
+#secondaryNav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#squirrelStapplerButton {
+    background-image: url('pictures/longersquirrelstapler.png');
+}
+
+#squirrelStapplerButton a:hover {
+    background-image: url('pictures/longersquirrelstapler.png');
+    background-size: cover;
+    filter: blur(5px);
+}
+
+#SOMAButton {
+    background-image: url('pictures/somaLongerIcon.jpg');
+}
+
+#signalisButton {
+    background-image: url('pictures/signalisIco.png');
+}
+
+#stillWakestheDeepButton {
+    background-image: url('pictures/stillWakesTheDeepIcon.jpg');
+}
+
+#mainContent {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.showMoreButton{
+    background-color: #656565; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1em; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    border: 2px solid #555; /* Border around the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.showMoreButton:hover {
+    background-color: #555; 
+    color: #ffffff;
+    border: 2px solid #555;
+}
+
+.infoSection {
+    display: none; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+
+}
+.infoSection:first-of-type {
+    display: flex; 
+    opacity: 1;
+}
+.infoSection.visible {
+    display: block;
+    opacity: 1;
+}
+
+
+.textContent {
+    flex: 1;
+}
+
+.imageContent {
+    flex: 1;
+    text-align: center;
+}
+
+.imageContent img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .infoSection {
+        flex-direction: column;
+    }
+
+    .imageContent {
+        order: -1; 
+    }
+}
