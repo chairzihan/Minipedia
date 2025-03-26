@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body {
     margin: 0;
@@ -5,6 +6,16 @@ body {
     background-color: #1a1a1a;
     color: #f0f0f0;
     font-family: 'Times New Roman', Times, serif;
+=======
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('indieHorrorGames/pictures/parallaxBackground.gif'); */
+    color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    /* overflow: hidden; */ /* Remove this to allow scrolling */
+>>>>>>> a9070cdfd6765498257e45915e33e1966e575a57
 }
 
 h1, h2, h4 {
@@ -123,6 +134,7 @@ p {
 .infoSection {
     display: none; 
     align-items: center; 
+<<<<<<< HEAD
     gap: 20px; 
     padding: 20px; 
     border-radius: 10px; 
@@ -131,6 +143,15 @@ p {
     opacity: 0; 
     transition: opacity 0.5s ease-in-out;
 
+=======
+    gap: 15px; /* Reduced gap */
+    padding: 10px; /* Reduced padding */
+    border-radius: 10px; 
+    margin-bottom: 20px; /* Reduced margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+>>>>>>> a9070cdfd6765498257e45915e33e1966e575a57
 }
 .infoSection:first-of-type {
     display: flex; 
@@ -141,7 +162,10 @@ p {
     opacity: 1;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a9070cdfd6765498257e45915e33e1966e575a57
 .textContent {
     flex: 1;
 }
@@ -166,4 +190,63 @@ p {
     .imageContent {
         order: -1; 
     }
+<<<<<<< HEAD
 }
+=======
+}
+.slide {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto; /* Allow dynamic height for content */
+    box-sizing: border-box;
+    background-color: #282828;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Prevent interaction when hidden */
+    display: none; /* Ensure it's not taking up space */
+    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.slide.active {
+    opacity: 1; /* Make visible */
+    visibility: visible; /* Allow interaction */
+    display: block; /* Ensure it's displayed */
+    z-index: 2; /* Bring the active section to the front */
+}
+
+  .slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  }
+
+[data-parallax] {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+[data-parallax].slide.active {
+    opacity: 1; /* Ensure parallax elements are visible when active */
+    visibility: visible;
+    display: block;
+}
+
+.steam {
+    display: inline-block; /* Ensure it behaves like an inline element */
+    width: 100px; /* Set a fixed width for the icon */
+    height: 100px; /* Set a fixed height for the icon */
+    background-image: url('pictures/steamIcon.png'); /* Steam icon */
+    background-size: contain; /* Ensure the entire image is visible */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+    vertical-align: middle; /* Align with text if used inline */
+}
+
+>>>>>>> a9070cdfd6765498257e45915e33e1966e575a57
